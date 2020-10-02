@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ca.sheridancollege.mohsenas</groupId>
-	<artifactId>lect31Lombok</artifactId>
+	<artifactId>lect32Thymeleaf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lect31Lombok</name>
-	<description>Lombok Demo</description>
+	<name>lect32Thymeleaf</name>
+	<description>Thymeleaf Demo</description>
 
 	<properties>
 		<java.version>15</java.version>

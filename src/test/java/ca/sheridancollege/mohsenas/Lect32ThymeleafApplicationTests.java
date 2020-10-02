@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Lect31LombokApplicationTests {
+class Lect32ThymeleafApplicationTests {
 
 	@Test
 	void contextLoads() {
