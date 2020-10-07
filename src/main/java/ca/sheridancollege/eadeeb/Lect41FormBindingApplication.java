@@ -1,13 +1,13 @@
-package ca.sheridancollege.mohsenas;
+package ca.sheridancollege.eadeeb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Lect32ThymeleafApplication {
+public class Lect41FormBindingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Lect32ThymeleafApplication.class, args);
+		SpringApplication.run(Lect41FormBindingApplication.class, args);
 	}
 
 }
