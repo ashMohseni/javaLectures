@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org">
+<html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Index Page</title>
 </head>
+
 <body>
-
-    <!-- Table to display the info about all songs in the list -->
-	<table>
-		<tr>
-			<th>ID</th>
-			<th>Title</th>
-			<th>Artist</th>
-			<th>Genre</th>
+	<h1>This is the list of students</h1>
+	<!-- Display the list of Students (NOTE: not implemented in the controller)-->
+	<table th:if="${studentList != null AND studentList != ''}">
+		<tr th:each="s : ${studentList}">
+			<td th:text="${s.name}">Frank</td>
 		</tr>
-		<!-- Use a loop to get the info for each song -->
-		<tr th:each="song: ${songList}" >
-		<td th:text="${song.id}">34</td>
-		<td th:text="${song.title}">Yesterday</td>
-		<td th:text="${song.artist}">Paul McCartney</td>
-		<td th:text="${song.genre}">Classical</td>		
-		</tr>
-
 	</table>
-    <hr>
-    
-    <!-- Use a form to add a new song to list -->
-   <form method="post" action="#" th:action="@{/addSong}" th:object="${song}">
-   
-   <!-- Get the info -->
-   ID: <input type="number" th:field="*{id}"/> <br>
-   Title: <input type="text" th:field="*{title}"/>
-   Artist: <input type="text" th:field="*{artist}"/>
-   Genre : <select th:field="*{genre}">   
-   <option th:each="genre: *{genres}" th:value="${genre}" th:text="${genre}" />   
-   </select><br>
-   <input type="submit" value="add song"/>
-   </form>     
+	
+	<!-- Add students to a list through form binding (NOTE: new Students are not processed in the controller)-->
+	
+	<form method="post" action="" th:action="@{/insertStudent}" th:object="${student}">
+	
+	<input type="hidden" name="id" th:field="*{id}"/><br>
+	Name: <input type="text" name="name" th:field="*{name}"/><br>
+	<input type="submit" value="Go!" />
+	</form>
+
 
 </body>
 </html>

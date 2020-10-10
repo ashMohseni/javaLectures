@@ -1,13 +1,13 @@
-package ca.sheridancollege.eadeeb;
+package ca.sheridancollege.mohsenas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Lect41FormBindingApplication {
+public class Lect42H2andJdbcTemplateApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Lect41FormBindingApplication.class, args);
+		SpringApplication.run(Lect42H2andJdbcTemplateApplication.class, args);
 	}
 
 }

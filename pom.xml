@@ -8,17 +8,21 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>ca.sheridancollege.eadeeb</groupId>
-	<artifactId>lect41FormBinding</artifactId>
+	<groupId>ca.sheridancollege.mohsenas</groupId>
+	<artifactId>lect42H2andJDBCTemplate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lect41FormBinding</name>
-	<description>Form Binding Demo</description>
+	<name>lect42H2andJDBCTemplate</name>
+	<description>Database connectivity demo</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>15</java.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -28,6 +32,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
